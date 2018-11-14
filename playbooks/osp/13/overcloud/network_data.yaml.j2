@@ -102,3 +102,12 @@
   allocation_pools: [{'start': '10.0.1.4', 'end': '10.0.1.250'}]
   ipv6_subnet: 'fd00:fd00:fd00:6000::/64'
   ipv6_allocation_pools: [{'start': 'fd00:fd00:fd00:6000::10', 'end': 'fd00:fd00:fd00:6000:ffff:ffff:ffff:fffe'}]
+- name: StorageNFS
+  enabled: true
+  vip: true
+  name_lower: storage_nfs
+  vlan: 70
+  ip_subnet: '172.16.4.0/24'
+  allocation_pools: [{'start': '172.16.4.4', 'end': '172.16.4.250'}]
+  ipv6_subnet: 'fd00:fd00:fd00:7000::/64'
+  ipv6_allocation_pools: [{'start': 'fd00:fd00:fd00:7000::10', 'end': 'fd00:fd00:fd00:7000:ffff:ffff:ffff:fffe'}]
